@@ -11,5 +11,5 @@ pip install discord
 pip install requests  
 pip install datetime  
   
- Pensez a modifié le channel d'envoie dans get_tomorrow
+ Pensez a modifié le channel d'envoie dans get_tomorrow l:72 + replacer mon id par ton id l:90
  
