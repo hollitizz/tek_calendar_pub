@@ -10,3 +10,6 @@ Click on iCal export link and get the part starting by "auth-" on the link, this
 pip install discord  
 pip install requests  
 pip install datetime  
+  
+ Pensez a modifié le channel d'envoie dans get_tomorrow
+ 
