@@ -7,6 +7,6 @@ Go to: https://intra.epitech.eu/planning/#
 Click on iCal export link and get the part starting by "auth-" on the link, this will be your TOKEN
   
     
-pip install discord
-pip install requests
-pip install datetime
+pip install discord  
+pip install requests  
+pip install datetime  
