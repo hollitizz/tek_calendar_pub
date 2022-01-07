@@ -5,3 +5,8 @@ For EPITECH Intra "INTRA_TOKEN":
 Go to: https://intra.epitech.eu/planning/#  
 ![alt text](https://www.zupimages.net/up/22/01/knkm.png)  
 Click on iCal export link and get the part starting by "auth-" on the link, this will be your TOKEN
+  
+    
+pip install discord
+pip install requests
+pip install datetime
