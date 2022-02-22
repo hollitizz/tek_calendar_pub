@@ -83,7 +83,10 @@ async def get_tomorrow(ctx=None):
         hour = f"{start[10:]} -> {end[10:]}"
         titlemodule = calendar[nbr_of_entry - 1]["titlemodule"]
         acti_title = calendar[nbr_of_entry - 1]["acti_title"]
-        room = calendar[nbr_of_entry - 1]['room']['code'][len('FR/PAR/'):]
+        try:
+            room = calendar[nbr_of_entry - 1]['room']['code'][len('FR/PAR/'):]
+        except:
+            room = "no entry for room"
         activity = f"{titlemodule}\n{acti_title}\n{room.replace('/', ' ').replace('-', '/')}"
         embed.add_field(name=hour, value=activity, inline=False)
         nbr_of_entry -= 1
@@ -114,7 +117,10 @@ async def get_day_from_date(ctx):
         hour = f"{start[10:]} -> {end[10:]}"
         titlemodule = calendar[nbr_of_entry - 1]["titlemodule"]
         acti_title = calendar[nbr_of_entry - 1]["acti_title"]
-        room = calendar[nbr_of_entry - 1]['room']['code'][len('FR/PAR/'):]
+        try:
+            room = calendar[nbr_of_entry - 1]['room']['code'][len('FR/PAR/'):]
+        except:
+            room = "no entry for room"        
         activity = f"{titlemodule}\n{acti_title}\n{room.replace('/', ' ').replace('-', '/')}"
         embed.add_field(name=hour, value=activity, inline=False)
         nbr_of_entry -= 1
